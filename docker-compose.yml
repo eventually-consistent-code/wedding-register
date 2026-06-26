@@ -1,0 +1,32 @@
+# Local dev stack for the demo / recording. Brings up MySQL (seeded with the
+# schema) and Adminer (a tiny DB UI, handy for showing rows land on camera).
+# The backend + frontend run via npm (see scripts/dev.sh) — that keeps the live
+# demo fast and avoids image builds.
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpw
+      MYSQL_DATABASE: wedding_register
+      MYSQL_USER: wedding
+      MYSQL_PASSWORD: wedding
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - dbdata:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-prootpw"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  adminer:
+    image: adminer:4
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+volumes:
+  dbdata:

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+
+# OpenTofu / Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terragrunt-cache/
+crash.log
+
+# beads/cairn local state (the JSONL export is tracked; live DB + caches are not)
+.cairn/id-map.json
+.cairn/state.json
+.cairn/conflicts.json
