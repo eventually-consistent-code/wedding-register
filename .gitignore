@@ -15,3 +15,8 @@ crash.log
 .cairn/id-map.json
 .cairn/state.json
 .cairn/conflicts.json
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
