@@ -1,0 +1,14 @@
+{
+  "$schema": "cairn sync config. bd is the hub/source of truth. Tokens are read from named ENV VARS at sync time — never store secrets here.",
+  "backends": [
+    {
+      "type": "github",
+      "enabled": true,
+      "adapter": "github",
+      "config": {
+        "repo": "BigJiggity/wedding-register",
+        "extra_labels": ["cairn"]
+      }
+    }
+  ]
+}
