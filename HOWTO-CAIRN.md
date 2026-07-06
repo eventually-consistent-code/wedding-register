@@ -41,9 +41,9 @@ gets a list. Deliberately small so the *workflow* is the star, not the app.
 ## Prerequisites
 
 ```text
-/plugin marketplace add BigJiggity/claude-plugins
+/plugin marketplace add eventually-consistent-code/claude-plugins
 /plugin marketplace add mksglu/context-mode      # cairn depends on it cross-marketplace
-/plugin install cairn@bigjiggity                  # GSD + context-mode auto-install
+/plugin install cairn@eventually-consistent-code                  # GSD + context-mode auto-install
 /reload-plugins
 ```
 
@@ -159,14 +159,14 @@ enabled the GitHub backend in [`.cairn/sync.json`](./.cairn/sync.json):
 
 ```json
 { "type": "github", "enabled": true,
-  "config": { "repo": "BigJiggity/wedding-register", "extra_labels": ["cairn"] } }
+  "config": { "repo": "eventually-consistent-code/wedding-register", "extra_labels": ["cairn"] } }
 ```
 
 Each `bd` lifecycle event pushes to GitHub Issues (reusing your `gh` auth), so
 every ticket has a linked issue carrying its `phase-N` label:
 
 ```bash
-gh issue list --repo BigJiggity/wedding-register
+gh issue list --repo eventually-consistent-code/wedding-register
 #  #1  [phase-1,cairn]  Provision VPC and 3-tier subnets
 #  #3  [phase-2,cairn]  Guests REST API + health check
 #  #6  [phase-3,cairn]  Registry form: name, address, phone

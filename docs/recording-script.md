@@ -44,8 +44,8 @@ beads knows you can't stand up the ALB before the VPC, security groups, and
 database exist."
 
 ### Scene 5 — GitHub linking (~40s) · [T] → [B]
-**Do:** `[T]` `gh issue list --repo BigJiggity/wedding-register` →
-`[B]` open `github.com/BigJiggity/wedding-register/issues`.
+**Do:** `[T]` `gh issue list --repo eventually-consistent-code/wedding-register` →
+`[B]` open `github.com/eventually-consistent-code/wedding-register/issues`.
 **Screen:** 10 issues, each with its `phase-N` + `cairn` label.
 **🎙** "Here's Cairn's sync: every beads ticket is mirrored to a GitHub issue,
 carrying its phase label. beads stays the source of truth; GitHub is the mirror.

@@ -6,7 +6,7 @@
       "enabled": true,
       "adapter": "github",
       "config": {
-        "repo": "BigJiggity/wedding-register",
+        "repo": "eventually-consistent-code/wedding-register",
         "extra_labels": ["cairn"]
       }
     }

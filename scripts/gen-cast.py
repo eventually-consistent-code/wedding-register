@@ -23,7 +23,7 @@ STEPS = [
     ("banner", "#  Cairn demo — beads + GitHub, deterministic parts"),
     ("run", "bd ready", "."),
     ("run", "bd list -l phase-1", "."),
-    ("run", "gh issue list --repo BigJiggity/wedding-register -L 10", "."),
+    ("run", "gh issue list --repo eventually-consistent-code/wedding-register -L 10", "."),
     ("comment", "#  every beads ticket mirrored to a GitHub issue (labels carry the phase)"),
     ("run", "cat .cairn/id-map.json", "."),
     ("comment", "#  infra is OpenTofu + Terragrunt — validates with no AWS account"),

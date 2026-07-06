@@ -3,7 +3,7 @@
 A tiny 3-tier wedding registry — guests add their **name, address, and phone**
 so the couple can send thank-yous later.
 
-> **This repo is a demo of [Cairn](https://github.com/BigJiggity/claude-plugins/tree/main/cairn).**
+> **This repo is a demo of [Cairn](https://github.com/eventually-consistent-code/claude-plugins/tree/main/cairn).**
 > The point isn't the app — it's showing how Cairn drives a real build:
 > GSD planning → beads tickets → execution → GitHub-linked issues, all from the
 > `/cairn:` command surface. The full walkthrough is in
