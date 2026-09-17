@@ -5,9 +5,10 @@ so the couple can send thank-yous later.
 
 > **This repo is a demo of [Cairn](https://github.com/eventually-consistent-code/claude-plugins/tree/main/cairn).**
 > The point isn't the app — it's showing how Cairn drives a real build:
-> GSD planning → beads tickets → execution → GitHub-linked issues, all from the
+> planning → tracked tickets → execution → GitHub-linked issues, all from the
 > `/cairn:` command surface. The full walkthrough is in
-> **[HOWTO-CAIRN.md](./HOWTO-CAIRN.md)**.
+> **[HOWTO-CAIRN.md](./HOWTO-CAIRN.md)** (written against the cairn 1.x + beads
+> flow; beads was retired 2026-09-17, cairn 2.0 tracks straight in GitHub).
 
 ## Architecture (3-tier, AWS)
 

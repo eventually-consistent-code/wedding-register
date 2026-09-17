@@ -1,7 +1,0 @@
-{
-  "database": "dolt",
-  "backend": "dolt",
-  "dolt_mode": "embedded",
-  "dolt_database": "wedding_register",
-  "project_id": "23c9ad56-1ce6-4a10-b634-f5054618d6fc"
-}

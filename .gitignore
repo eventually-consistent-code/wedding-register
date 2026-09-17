@@ -11,12 +11,8 @@ dist/
 .terragrunt-cache/
 crash.log
 
-# beads/cairn local state (the JSONL export is tracked; live DB + caches are not)
+# cairn local state (the JSONL export is tracked; live DB + caches are not)
 .cairn/id-map.json
 .cairn/state.json
 .cairn/conflicts.json
 
-# Beads / Dolt files (added by bd init)
-.dolt/
-*.db
-.beads-credential-key

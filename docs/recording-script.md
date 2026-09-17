@@ -1,5 +1,9 @@
 # Recording Script — "Building wedding-register with Cairn"
 
+> **Heads up:** this shot list was written for cairn 1.x with the beads (`bd`)
+> tracker underneath. beads was retired 2026-09-17; if you re-record, cairn 2.0
+> tracks straight in GitHub Issues, so the `bd` scenes need a new take.
+
 A timed shot list for a screen recording you narrate afterward. Two surfaces:
 **[T]** terminal, **[B]** browser. Each scene has what to do, what's on screen,
 and a **🎙 voiceover cue** (record the v/o after, watching the footage).

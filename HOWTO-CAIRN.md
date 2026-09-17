@@ -1,5 +1,10 @@
 # How to Build a Real Project with Cairn
 
+> **Heads up:** this walkthrough was recorded against cairn 1.x with the beads
+> (`bd`) tracker underneath. beads was retired and pulled from this repo on
+> 2026-09-17; cairn 2.0 talks to GitHub Issues directly through `cairn.json`.
+> The shape of the workflow still holds, the `bd` commands don't.
+
 > A walkthrough using **wedding-register** — a 3-tier AWS web app — as the worked
 > example. By the end you'll know what Cairn is, the one command interface, and
 > the exact sequence that takes a blank folder to a planned, tracked,

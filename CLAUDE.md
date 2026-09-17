@@ -40,8 +40,7 @@ Infra wants `TF_VAR_db_password` exported before `terragrunt` plan.
 - `GET /health` exists only as the ALB target-group probe; nothing in the app calls it.
 - One table, `guests`, in `db/schema.sql`. MySQL loads it via the docker-entrypoint volume on first
   boot only — schema edits need `docker compose down -v` to reseed.
-- Beads' Dolt DB lives at `.beads/embeddeddolt/` (AGENTS.md says `.beads/dolt/`; it's wrong).
 
 ## Tracker
 
-Beads (`bd`) for all task tracking — protocol in `AGENTS.md`; `bd prime` runs on SessionStart/PreCompact.
+No tracker is wired into this repo — beads was retired and removed 2026-09-17. Track follow-ups as GitHub Issues on the repo; if the demo needs the cairn workflow end-to-end again, add a `cairn.json` pointing at GitHub.
